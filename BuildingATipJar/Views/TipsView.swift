@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TipsView: View {
+  
+  @EnvironmentObject private var store: TipStore
         
     var didTapClose: () -> ()
     
@@ -55,5 +57,6 @@ struct TipsView: View {
 struct TipsView_Previews: PreviewProvider {
     static var previews: some View {
         TipsView {}
+        .environmentObject(TipStore())
     }
 }
