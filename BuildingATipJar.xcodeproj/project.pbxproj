@@ -16,6 +16,8 @@
 		2A820A7F2B9B6F0500CFB080 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A7C2B9B6F0500CFB080 /* TipsView.swift */; };
 		2A820A822B9B704400CFB080 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A820A812B9B704400CFB080 /* StoreKit.framework */; };
 		2A820A852B9B72AF00CFB080 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A842B9B72AF00CFB080 /* TestView.swift */; };
+		2A820A872B9BA63D00CFB080 /* MyProductIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A862B9BA63D00CFB080 /* MyProductIdentifiers.swift */; };
+		2A820A892B9BA70C00CFB080 /* TipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A882B9BA70C00CFB080 /* TipStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		2A820A812B9B704400CFB080 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2A820A832B9B70BF00CFB080 /* MyTipsStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyTipsStoreKitConfiguration.storekit; sourceTree = "<group>"; };
 		2A820A842B9B72AF00CFB080 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		2A820A862B9BA63D00CFB080 /* MyProductIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductIdentifiers.swift; sourceTree = "<group>"; };
+		2A820A882B9BA70C00CFB080 /* TipStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				2A820A702B9B6E6900CFB080 /* BuildingATipJar.entitlements */,
 				2A820A712B9B6E6900CFB080 /* Preview Content */,
 				2A820A832B9B70BF00CFB080 /* MyTipsStoreKitConfiguration.storekit */,
+				2A820A862B9BA63D00CFB080 /* MyProductIdentifiers.swift */,
+				2A820A882B9BA70C00CFB080 /* TipStore.swift */,
 			);
 			path = BuildingATipJar;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 				2A820A852B9B72AF00CFB080 /* TestView.swift in Sources */,
 				2A820A7F2B9B6F0500CFB080 /* TipsView.swift in Sources */,
 				2A820A7D2B9B6F0500CFB080 /* TipsItemView.swift in Sources */,
+				2A820A892B9BA70C00CFB080 /* TipStore.swift in Sources */,
 				2A820A6D2B9B6E6700CFB080 /* HomeView.swift in Sources */,
+				2A820A872B9BA63D00CFB080 /* MyProductIdentifiers.swift in Sources */,
 				2A820A6B2B9B6E6700CFB080 /* BuildingATipJarApp.swift in Sources */,
 				2A820A7E2B9B6F0500CFB080 /* ThanksView.swift in Sources */,
 			);
