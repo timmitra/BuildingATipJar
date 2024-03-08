@@ -18,10 +18,57 @@
       "productID" : "ITG.BuildingATipJar.tinyTip",
       "referenceName" : "Tiny Tip",
       "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "2D029E69",
+      "localizations" : [
+        {
+          "description" : "Treat me a pizza slice 🍕",
+          "displayName" : "Treat me to a slice",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "ITG.BuildingATipJar.smallTip",
+      "referenceName" : "Small Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "1231A93E",
+      "localizations" : [
+        {
+          "description" : "Treat me to a burger 🍔",
+          "displayName" : "Treat me a burger",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "ITG.BuildingATipJar.mediumTip",
+      "referenceName" : "Medium Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "97895596",
+      "localizations" : [
+        {
+          "description" : "Treat me a steak dinner 🥩",
+          "displayName" : "Treat me a steak",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "ITG.BuildingATipJar.largeTip",
+      "referenceName" : "Large Tip",
+      "type" : "Consumable"
     }
   ],
   "settings" : {
     "_failTransactionsEnabled" : false,
+    "_locale" : "en_CA",
+    "_storefront" : "CAN",
     "_storeKitErrors" : [
       {
         "current" : null,
