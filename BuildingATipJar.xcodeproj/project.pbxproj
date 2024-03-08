@@ -15,6 +15,7 @@
 		2A820A7E2B9B6F0500CFB080 /* ThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A7B2B9B6F0500CFB080 /* ThanksView.swift */; };
 		2A820A7F2B9B6F0500CFB080 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A7C2B9B6F0500CFB080 /* TipsView.swift */; };
 		2A820A822B9B704400CFB080 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A820A812B9B704400CFB080 /* StoreKit.framework */; };
+		2A820A852B9B72AF00CFB080 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A820A842B9B72AF00CFB080 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2A820A7C2B9B6F0500CFB080 /* TipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		2A820A812B9B704400CFB080 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2A820A832B9B70BF00CFB080 /* MyTipsStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyTipsStoreKitConfiguration.storekit; sourceTree = "<group>"; };
+		2A820A842B9B72AF00CFB080 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				2A820A7B2B9B6F0500CFB080 /* ThanksView.swift */,
 				2A820A7A2B9B6F0500CFB080 /* TipsItemView.swift */,
 				2A820A7C2B9B6F0500CFB080 /* TipsView.swift */,
+				2A820A842B9B72AF00CFB080 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A820A852B9B72AF00CFB080 /* TestView.swift in Sources */,
 				2A820A7F2B9B6F0500CFB080 /* TipsView.swift in Sources */,
 				2A820A7D2B9B6F0500CFB080 /* TipsItemView.swift in Sources */,
 				2A820A6D2B9B6E6700CFB080 /* HomeView.swift in Sources */,
