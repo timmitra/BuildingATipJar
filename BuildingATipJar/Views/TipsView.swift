@@ -36,8 +36,8 @@ struct TipsView: View {
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 16)
             
-            ForEach(0...3, id: \.self) { _ in
-                TipsItemView()
+          ForEach(store.items) { item in
+            TipsItemView(item: item)
             }
         }
         .padding(16)
