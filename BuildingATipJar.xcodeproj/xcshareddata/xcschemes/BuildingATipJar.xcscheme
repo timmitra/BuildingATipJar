@@ -50,6 +50,12 @@
             ReferencedContainer = "container:BuildingATipJar.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "IDEPreferLogStreaming=YES"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <StoreKitConfigurationFileReference
          identifier = "../../BuildingATipJar/MyTipsStoreKitConfiguration.storekit">
       </StoreKitConfigurationFileReference>
