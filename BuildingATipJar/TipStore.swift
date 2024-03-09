@@ -39,6 +39,7 @@ enum TipsAction: Equatable {
 }
 
 typealias PurchaseResult = Product.PurchaseResult
+typealias TransactionListener = Task<Void, Error>
 
 @MainActor
 final class TipStore: ObservableObject {
@@ -65,10 +66,19 @@ final class TipStore: ObservableObject {
     }
   }
   
+  private var transactionListener: TransactionListener?
+  
   init() {
+    
+    transactionListener = configureTransactionListener()
+    
     Task { [weak self] in
       await self?.retrieveProducts()
     }
+  }
+  
+  deinit {
+    transactionListener?.cancel()
   }
   
   func purchase(_ item: Product) async {
@@ -92,6 +102,23 @@ final class TipStore: ObservableObject {
 }
 
 private extension TipStore {
+  
+  func configureTransactionListener() -> TransactionListener {
+    
+    Task.detached(priority: .background) { @MainActor [weak self] in
+      
+      do {
+        for await result in Transaction.updates {
+          let transaction = try self?.checkVerified(result)
+          self?.action = .successful
+          await transaction?.finish()
+        }
+      } catch {
+        self?.action = .failed(.system(error))
+        print(error)
+      }
+    }
+  }
   
   //@MainActor // views will listen, so we update on the main thread
   func retrieveProducts() async {
