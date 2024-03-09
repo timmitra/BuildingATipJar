@@ -11,7 +11,8 @@ struct HomeView: View {
   
   @State private var showTips = false
   @State private var showThanks = false
-  @StateObject private var store = TipStore()
+  
+  @EnvironmentObject private var store: TipStore
       
       var body: some View {
           VStack {
@@ -71,4 +72,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+    .environmentObject(TipStore())
 }

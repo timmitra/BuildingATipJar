@@ -8,10 +8,15 @@
 import SwiftUI
 
 @main
+
+
 struct BuildingATipJarApp: App {
-    var body: some Scene {
+  
+  @StateObject private var store = TipStore()
+ 
+  var body: some Scene {
         WindowGroup {
             HomeView()
-        }
+        }.environmentObject(store)
     }
 }
